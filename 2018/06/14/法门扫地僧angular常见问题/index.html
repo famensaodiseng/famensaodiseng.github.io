@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>法门扫地僧面试宝典第五版 | 法门扫地僧的一亩三分地的前端开发工程师H5开发HTML5CSSJavascript</title>
+  <meta name="description" content="法门扫地僧的前端开发技术博客,前端工程师,node" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="wb:webmaster" content="510f0f8a61c6b240" />
+  <meta name="baidu-site-verification" content="4WoaDYL5tX" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-title" content="法门扫地僧">
+  <meta charset="utf-8" name="description" content="法门扫地僧专注于前端开发以及新媒体运营，微博，微信公众号推广等策划活动，您的喜欢就是我们最大的信赖！">
+  
+    <meta name="keywords" content="法门扫地僧的一亩三分地前端开发工程师H5开发" />
+  
+  <meta name="description" content="Front-End前端开发工程师面试宝典！   （本文部分有转载，不定期更新！）          前言（README.md）12本仓库是我整理的前端常见面试题，大部分由我整理，其中个别部分参考网上其他资料，感谢！   本资料仅供大家学习参考使用！欢迎大家Star和提交issues。 NO.1  READMENO.2  简历经验分享NO.3  angular常见问题NO.4  前端面试宝典第一版N">
+<meta name="keywords" content="面试">
+<meta property="og:type" content="article">
+<meta property="og:title" content="法门扫地僧面试宝典第五版">
+<meta property="og:url" content="https://lzws0931.cn/2018/06/14/法门扫地僧angular常见问题/index.html">
+<meta property="og:site_name" content="法门扫地僧的一亩三分地的前端开发工程师H5开发HTML5CSSJavascript">
+<meta property="og:description" content="Front-End前端开发工程师面试宝典！   （本文部分有转载，不定期更新！）          前言（README.md）12本仓库是我整理的前端常见面试题，大部分由我整理，其中个别部分参考网上其他资料，感谢！   本资料仅供大家学习参考使用！欢迎大家Star和提交issues。 NO.1  READMENO.2  简历经验分享NO.3  angular常见问题NO.4  前端面试宝典第一版N">
+<meta property="og:image" content="https://img.shields.io/badge/%E6%89%AB%E5%9C%B0-%E5%83%A7-green.svg?style=plastic">
+<meta property="og:updated_time" content="2018-11-05T17:11:34.086Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="法门扫地僧面试宝典第五版">
+<meta name="twitter:description" content="Front-End前端开发工程师面试宝典！   （本文部分有转载，不定期更新！）          前言（README.md）12本仓库是我整理的前端常见面试题，大部分由我整理，其中个别部分参考网上其他资料，感谢！   本资料仅供大家学习参考使用！欢迎大家Star和提交issues。 NO.1  READMENO.2  简历经验分享NO.3  angular常见问题NO.4  前端面试宝典第一版N">
+<meta name="twitter:image" content="https://img.shields.io/badge/%E6%89%AB%E5%9C%B0-%E5%83%A7-green.svg?style=plastic">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated" >
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">法门扫地僧</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>主页</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>归档</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>关于我</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div style="right:0;position:fixed;top: 20%;">
+         <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=58267980&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:58267980:51" alt="立即聊天" title="立即聊天"/></a>
+         </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.jpg" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        法门扫地僧
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        技术与生活分享博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <div>
+           <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=33955052&auto=0&height=32"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div>
+    <a href="https://github.com/famensaodiseng"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png" alt="Fork me on GitHub"></a>
+    </div>
+</header>
+
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-法门扫地僧angular常见问题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+<div class="sideContent"></div>
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      法门扫地僧面试宝典第五版
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/面试宝典/">面试宝典</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2018-06-14
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h1 id="Front-End"><a href="#Front-End" class="headerlink" title="Front-End"></a>Front-End</h1><h2 id="前端开发工程师面试宝典！-（本文部分有转载，不定期更新！）"><a href="#前端开发工程师面试宝典！-（本文部分有转载，不定期更新！）" class="headerlink" title="前端开发工程师面试宝典！   （本文部分有转载，不定期更新！）          "></a>前端开发工程师面试宝典！   （本文部分有转载，不定期更新！）          <a href="https://weibo.com/237800789" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/%E6%89%AB%E5%9C%B0-%E5%83%A7-green.svg?style=plastic" alt="AppVeyor"></a></h2><h2 id="前言（README-md）"><a href="#前言（README-md）" class="headerlink" title="前言（README.md）"></a><a name="preface">前言（README.md）</a></h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">本仓库是我整理的前端常见面试题，大部分由我整理，其中个别部分参考网上其他资料，感谢！   </span><br><span class="line">本资料仅供大家学习参考使用！欢迎大家Star和提交issues。</span><br></pre></td></tr></table></figure>
+<p>NO.1  <a href="https://github.com/famensaodiseng/Front-End/edit/master/README.md" target="_blank" rel="noopener">README</a><br>NO.2  <a href="https://github.com/famensaodiseng/Front-End/blob/master/%E7%AE%80%E5%8E%86%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB.md" target="_blank" rel="noopener">简历经验分享</a><br>NO.3  <a href="https://github.com/famensaodiseng/Front-End/blob/master/angular%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.md" target="_blank" rel="noopener">angular常见问题</a><br>NO.4  <a href="https://github.com/famensaodiseng/Front-End/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E5%AE%9D%E5%85%B8%E7%AC%AC%E4%B8%80%E7%89%88.md" target="_blank" rel="noopener">前端面试宝典第一版</a><br>NO.5  <a href="https://github.com/famensaodiseng/Front-End/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E5%AE%9D%E5%85%B8%E7%AC%AC%E4%BA%8C%E7%89%88.md" target="_blank" rel="noopener">前端笔记版本第二版</a><br>NO.6  <a href="https://github.com/famensaodiseng/Front-End/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E5%AE%9D%E5%85%B8%E7%AC%AC%E4%B8%89%E7%89%88.md" target="_blank" rel="noopener">前端笔记版本第三版</a><br>NO.7  <a href="https://github.com/famensaodiseng/Front-End/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E5%AE%9D%E5%85%B8%E7%AC%AC%E5%9B%9B%E7%89%88.md" target="_blank" rel="noopener">前端笔记版本第四版</a><br>NO.8  <a href="https://github.com/famensaodiseng/Front-End/blob/master/vue%E9%9D%A2%E8%AF%95%E5%AE%9D%E5%85%B8.md" target="_blank" rel="noopener">vue常见问题</a>      </p>
+<h1 id="欢迎大家一起交流提高"><a href="#欢迎大家一起交流提高" class="headerlink" title="欢迎大家一起交流提高"></a>欢迎大家一起交流提高</h1><h3 id="angularjs的几大特性是什么？"><a href="#angularjs的几大特性是什么？" class="headerlink" title="angularjs的几大特性是什么？"></a>angularjs的几大特性是什么？</h3><p>双向数据绑定、依赖注入、模板、指令、MVC/MVVM</p>
+<h3 id="列举几种常见的设计模式，写出没个代表的含义？"><a href="#列举几种常见的设计模式，写出没个代表的含义？" class="headerlink" title="列举几种常见的设计模式，写出没个代表的含义？"></a>列举几种常见的设计模式，写出没个代表的含义？</h3><p>MVC ：model view controller<br>MVVM ：model view viewModel</p>
+<h3 id="请描述angularjs的运行过程？"><a href="#请描述angularjs的运行过程？" class="headerlink" title="请描述angularjs的运行过程？"></a>请描述angularjs的运行过程？</h3><p>angularjs编译所有的HTML元素标签，然后在里面查找angular程序的入口 ng-app 每个元素上的指令是把所有指令收集起来根据优先级依次编译</p>
+<h3 id="ng-bind和ng-model的区别是什么？"><a href="#ng-bind和ng-model的区别是什么？" class="headerlink" title="ng-bind和ng-model的区别是什么？"></a>ng-bind和ng-model的区别是什么？</h3><p>ng-bind只能展示数据 ng-model可以操作数据</p>
+<h3 id="请描述-scope的特点还有其最大的父类？"><a href="#请描述-scope的特点还有其最大的父类？" class="headerlink" title="请描述$scope的特点还有其最大的父类？"></a>请描述$scope的特点还有其最大的父类？</h3><p>随创建作用域创建的一个变量，就代表controller所代表的作用域，其持有的对象和方法可在当前及其子作用域生效</p>
+<h3 id="原生js的延迟或回调在angularjs里能完美运行吗？怎么解决？可以用例子？"><a href="#原生js的延迟或回调在angularjs里能完美运行吗？怎么解决？可以用例子？" class="headerlink" title="原生js的延迟或回调在angularjs里能完美运行吗？怎么解决？可以用例子？"></a>原生js的延迟或回调在angularjs里能完美运行吗？怎么解决？可以用例子？</h3><p>不能 需要用$apply来进行传播</p>
+<h3 id="自定义过滤创建后返回的是一个什么对象？"><a href="#自定义过滤创建后返回的是一个什么对象？" class="headerlink" title="自定义过滤创建后返回的是一个什么对象？"></a>自定义过滤创建后返回的是一个什么对象？</h3><p>返回一个函数对象 并且函数内要返回最后返回的对象</p>
+<h3 id="ng-repeat循环-1-3-2-4-3-4-数组会报错吗？如果会怎么解决？"><a href="#ng-repeat循环-1-3-2-4-3-4-数组会报错吗？如果会怎么解决？" class="headerlink" title="ng-repeat循环[1,3,2,4,3,4]数组会报错吗？如果会怎么解决？"></a>ng-repeat循环[1,3,2,4,3,4]数组会报错吗？如果会怎么解决？</h3><p>会因为有重复的内容 track by $index</p>
+<h3 id="angular常用的服务中value和constant最大的区别是什么？"><a href="#angular常用的服务中value和constant最大的区别是什么？" class="headerlink" title="angular常用的服务中value和constant最大的区别是什么？"></a>angular常用的服务中value和constant最大的区别是什么？</h3><p>constant的创建要早于value 并且其可以在config配置中使用 value不行</p>
+<h3 id="常用服务中factory和service的最大区别是什么？"><a href="#常用服务中factory和service的最大区别是什么？" class="headerlink" title="常用服务中factory和service的最大区别是什么？"></a>常用服务中factory和service的最大区别是什么？</h3><p>factory返回的对象当我们使用它的时候手动初始化并返回，而service是当我们第一次使用的时候angular帮我们初始化一次，然后以后使用的时候返回的都是这个对象，factory创建的服务是代表的是其后面函数的返回值，这个返回值可以是任意类型，service不用返回，直接操作的就是自己</p>
+<h3 id="怎么拦截服务？"><a href="#怎么拦截服务？" class="headerlink" title="怎么拦截服务？"></a>怎么拦截服务？</h3><p>在config配置里注入需要拦截的服务的名字+Provider来拦截</p>
+<h3 id="decorator的作用是什么？和拦截服务的区别是什么？"><a href="#decorator的作用是什么？和拦截服务的区别是什么？" class="headerlink" title="decorator的作用是什么？和拦截服务的区别是什么？"></a>decorator的作用是什么？和拦截服务的区别是什么？</h3><p>装饰器不仅可以应用在我们自己的服务上，也可以对angularjs核心服务进行拦截、中断甚至替换功能的操作，事实上angularjs的很多测试就是借助$provide.decorator()建立的、请写一个配置路由的代码段（只需要写怎么声明一个路由和其常用属性的代码段）</p>
+<h3 id="resolve的作用是什么？"><a href="#resolve的作用是什么？" class="headerlink" title="resolve的作用是什么？"></a>resolve的作用是什么？</h3><p>如果设置了resolve属性，angularjs会将列表中的元素都注入到控制器中，列表对象可以是键(键值是会被注入到控制器中依赖的名字)，也可以是工厂(即可以是一个服务的名字)</p>
+<h3 id="ngRoute默认查找的路由是什么？-routeProvider-otherwise-’-index’-是什么作用？"><a href="#ngRoute默认查找的路由是什么？-routeProvider-otherwise-’-index’-是什么作用？" class="headerlink" title="ngRoute默认查找的路由是什么？$routeProvider.otherwise(’/index’)是什么作用？"></a>ngRoute默认查找的路由是什么？$routeProvider.otherwise(’/index’)是什么作用？</h3><p>是/ 设置路由的意外指向到/index</p>
+<p>###常使用的跨域方案就哪两种？分别描述其利用的原理？</p>
+<p>jsonp; post请求设置请求头 ； jsonp利用的是script可以访问外部信息的原理发送请求并且利用jsonp协议进行数据交互 post设置请求头跳过预请求来实现跨域</p>
+<h3 id="ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？"><a href="#ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？" class="headerlink" title="ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？"></a>ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？</h3><p>会提示 Duplicates in a repeater are not allowed.加 track by $index</p>
+<p>可解决。当然，也可以 trace by 任何一个普通的值，只要能唯一性标识数组中的每一项即可（建立 dom 和数据之间的关联）。</p>
+<p>ng-click 中写的表达式，能使用 JS 原生对象上的方法吗？</p>
+<p>不止是 ng-click 中的表达式，只要是在页面中，都不能直接调用原生的 JS 方法，因为这些并不存在于与页面对应的 Controller 的 $scope 中。</p>
+<p>会发现，什么也没有显示。<br>但如果在 $scope 中添加了这个函数：<br>$scope.parseInt = function(x){ return parseInt(x);}<br>这样自然是没什么问题了。</p>
+<h3 id="angular-应用常用哪些路由库，各自的区别是什么？"><a href="#angular-应用常用哪些路由库，各自的区别是什么？" class="headerlink" title="angular 应用常用哪些路由库，各自的区别是什么？"></a>angular 应用常用哪些路由库，各自的区别是什么？</h3><p>Angular1.x 中常用 ngRoute 和 ui.router，还有一种为 Angular2 设计的 <a href="https://angular.github.io/router/" target="_blank" rel="noopener">new router</a>（面向组件）。后面那个没在实际项目中用过，就不讲了。<br>无论是 ngRoute 还是 ui.router，作为框架额外的附加功能，都必须以 模块依赖 的形式被引入。<br>区别<br>ngRoute 模块是 Angular 自带的路由模块，而 ui.router 模块是基于 ngRoute模块开发的第三方模块。<br>ui.router 是基于 state （状态）的， ngRoute 是基于 url 的，ui.router模块具有更强大的功能，主要体现在视图的嵌套方面。<br>使用 ui.router 能够定义有明确父子关系的路由，并通过 ui-view 指令将子路由模版插入到父路由模板的</p>
+<p>中去，从而实现视图嵌套。而在 ngRoute 中不能这样定义，如果同时在父子视图中 使用了</p>
+<p>会陷入死循环。</p>
+<h2 id="如果通过angular的directive规划一套全组件化体系，可能遇到哪些挑战？"><a href="#如果通过angular的directive规划一套全组件化体系，可能遇到哪些挑战？" class="headerlink" title="如果通过angular的directive规划一套全组件化体系，可能遇到哪些挑战？"></a>如果通过angular的directive规划一套全组件化体系，可能遇到哪些挑战？</h2><p>没有自己用 directive 做过一全套组件，讲不出。<br>能想到的一点是，组件如何与外界进行数据的交互，以及如何通过简单的配置就能使用吧。<br>分属不同团队进行开发的 angular 应用，如果要做整合，可能会遇到哪些问题，如何解决？<br>可能会遇到不同模块之间的冲突。<br>比如一个团队所有的开发在 moduleA 下进行，另一团队开发的代码在 moduleB 下<br>angular.module(‘myApp.moduleA’, []) .factory(‘serviceA’, function(){ … }) angular.module(‘myApp.moduleB’, []) .factory(‘serviceA’, function(){ … }) angular.module(‘myApp’, [‘myApp.moduleA’, ‘myApp.moduleB’])</p>
+<p>会导致两个 module 下面的 serviceA 发生了覆盖。<br>貌似在 Angular1.x 中并没有很好的解决办法，所以最好在前期进行统一规划，做好约定，严格按照约定开发，每个开发人员只写特定区块代码。<br>angular 的缺点有哪些？<br>强约束<br>导致学习成本较高，对前端不友好。<br>但遵守 AngularJS 的约定时，生产力会很高，对 Java 程序员友好。<br>不利于 SEO<br>因为所有内容都是动态获取并渲染生成的，搜索引擎没法爬取。<br>一种解决办法是，对于正常用户的访问，服务器响应 AngularJS 应用的内容；对于搜索引擎的访问，则响应专门针对 SEO 的HTML页面。<br>性能问题<br>作为 MVVM 框架，因为实现了数据的双向绑定，对于大数组、复杂对象会存在性能问题。<br>可以用来 <a href="https://github.com/xufei/blog/issues/23" target="_blank" rel="noopener">优化 Angular 应用的性能</a> 的办法：<br>减少监控项（比如对不会变化的数据采用单向绑定）</p>
+<p>主动设置索引（指定 track by<br>，简单类型默认用自身当索引，对象默认使用 $$hashKey<br>，比如改为 track by item.id<br>）</p>
+<p>降低渲染数据量（比如分页，或者每次取一小部分数据，根据需要再取）</p>
+<p>数据扁平化（比如对于树状结构，使用扁平化结构，构建一个 map 和树状数据，对树操作时，由于跟扁平数据同一引用，树状数据变更会同步到原始的扁平数据）</p>
+<p>另外，对于Angular1.x ，存在 脏检查 和 模块机制 的问题。<br>移动端<br>可尝试 Ionic，但并不完善。</p>
+<h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><p>对于一个 DI 容器，必须具备三个要素：依赖项的注册，依赖关系的声明和对象的获取。<br>在 AngularJS 中，module 和 $provide 都可以提供依赖项的注册；内置的 injector 可以获取对象（自动完成依赖注入）；依赖关系的声明，就是前面问题中提到的那样。<br>下面是个栗子<br>// 对于 module，传递参数不止一个，代表新建模块，空数组代表不依赖其他模块// 只有一个参数（模块名），代表获取模块// 定义 myApp，添加 myApp.services 为其依赖项angular.module(‘myApp’, [‘myApp.services’]);// 定义一个 services module，将 services 都注册在这个 module 下面angular.module(‘myApp.services’, [])// $provider 有 factory, service, provider, value, constant// 定义一个 HttpServiceangular.module(‘myApp.services’).service(‘HttpService’, [‘$http’, function($http){ …}])</p>
+<h3 id="如何看待angular2"><a href="#如何看待angular2" class="headerlink" title="如何看待angular2"></a>如何看待angular2</h3><p>相比 Angular1.x，Angular2的改动很大，几乎算是一个全新的框架。<br>基于 TypeScript（可以使用 TypeScript 进行开发），在大型项目团队协作时，强语言类型更有利。<br>组件化，提升开发和维护的效率。<br>还有 module 支持动态加载，new router，promise的原生支持等等。<br>迎合未来标准，吸纳其他框架的优点，值得期待，不过同时要学习的东西也更多了（ES next、TS、Rx等）    </p>
+<h3 id="angularjs-是-mvc-还是-mvvm-框架"><a href="#angularjs-是-mvc-还是-mvvm-框架" class="headerlink" title="angularjs 是 mvc 还是 mvvm 框架?"></a>angularjs 是 mvc 还是 mvvm 框架?</h3><p>首先阐述下你对mvc和mvvm的理解<br>首先为什么我们会需要MVC？因为随着代码规模越来越大，切分职责是大势所趋，还有为了后期维护方便，修改一块功能不影响其他功能。还有为了复用，因为很多逻辑是一样的。而MVC只是手段，终极目标是模块化和复用。<br>mvvm的优点:</p>
+<p>低耦合：View可以独立于Model变化和修改，同一个ViewModel可以被多个View复用；并且可以做到View和Model的变化互不影响<br>可重用性：可以把一些视图的逻辑放在ViewModel，让多个View复用<br>独立开发：开发人员可以专注与业务逻辑和数据的开发（ViewModemvvmdi计人员可以专注于UI(View)的设计<br>可测试性：清晰的View分层，使得针对表现层业务逻辑的测试更容易，更简单<br>在angular中MVVM模式主要分为四部分：</p>
+<p>View：它专注于界面的显示和渲染，在angular中则是包含一堆声明式Directive的视图模板。<br>ViewModel：它是View和Model的粘合体，负责View和Model的交互和协作，它负责给View提供显示的数据，以及提供了View中Command事件操作Model的途径；在angular中$scope对象充当了这个ViewModel的角色；<br>Model：它是与应用程序的业务逻辑相关的数据的封装载体，它是业务领域的对象，Model并不关心会被如何显示或操作，所以模型也不会包含任何界面显示相关的逻辑。在web页面中，大部分Model都是来自Ajax的服务端返回数据或者是全局的配置对象；而angular中的service则是封装和处理这些与Model相关的业务逻辑的场所，这类的业务服务是可以被多个Controller或者其他service复用的领域服务。<br>Controller：这并不是MVVM模式的核心元素，但它负责ViewModel对象的初始化，它将组合一个或者多个service来获取业务领域Model放在ViewModel对象上，使得应用界面在启动加载的时候达到一种可用的状态。</p>
+<h3 id="angular-核心？"><a href="#angular-核心？" class="headerlink" title="angular 核心？"></a>angular 核心？</h3><p>AngularJS是为了克服HTML在构建应用上的不足而设计的。 AngularJS有着诸多特性，最为核心的是：</p>
+<p>MVC<br>模块化<br>自动化双向数据绑定<br>语义化标签、依赖注入等等<br>factory 和 service，provider是什么关系？<br>factory 把 service 的方法和数据放在一个对象里，并返回这个对象；service 通过构造函数方式创建 service，返回一个实例化对象；provider 创建一个可通过 config 配置的 service。</p>
+<p>从底层实现上来看，service 调用了 factory，返回其实例；factory 调用了 provider，将其定义的内容放在 $get 中返回。factory 和 service 功能类似，只不过 factory 是普通 function，可以返回任何东西（return 的都可以被访问，所以那些私有变量怎么写你懂的）；service 是构造器，可以不返回（绑定到 this 的都可以被访问）；provider 是加强版 factory，返回一个可配置的 factory。</p>
+<p>###ng-if 跟 ng-show/hide的区别有哪些？<br>ng-if 在后面表达式为 true 的时候才创建这个 dom 节点，ng-show 是初始时就创建了，用 display:block 和 display:none 来控制显示和不显示。<br>ng-if 会（隐式地）产生新作用域，ng-switch 、 ng-include 等会动态创建一块界面的也是如此。</p>
+<h3 id="ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？-1"><a href="#ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？-1" class="headerlink" title="ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？"></a>ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？</h3><p>会提示 Duplicates in a repeater are not allowed. 加 track by $index 可解决。当然，也可以 trace by 任何一个普通的值，只要能唯一性标识数组中的每一项即可（建立 dom 和数据之间的关联）。</p>
+<p>在写controlloer逻辑的时候 你需要注意什么？<br>简化代码（这个是所有开发人员都要具备的）<br>坚决不能操作dom节点 这个时候可能会问 为什么不能啊<br>你的回答是：DOM操作只能出现在指令（directive）中。最不应该出现的位置就是服务（service）中。Angular倡导以测试驱动开发，在service或者controller中出现了DOM操作，那么也就意味着的测试是无法通过的。当然，这只是一点，重要的是使用Angular的其中一个好处是啥，那就是双向数据绑定，这样就能专注于处理业务逻辑，无需关系一堆堆的DOM操作。如果在Angular的代码中还到处充斥着各种DOM操作，那为什么不直接使用jquery去开发呢。</p>
+<h3 id="测试驱动开发是什么呢？普及一下："><a href="#测试驱动开发是什么呢？普及一下：" class="headerlink" title="测试驱动开发是什么呢？普及一下："></a>测试驱动开发是什么呢？普及一下：</h3><p>测试驱动开发，英文全称Test-Driven Development，简称TDD，是一种不同于传统软件开发流程的新型的开发方法。它要求在编写某个功能的代码之前先编写测试代码，然后只编写使测试通过的功能代码，通过测试来推动整个开发的进行。这有助于编写简洁可用和高质量的代码，并加速开发过程。</p>
+<h3 id="单页应用有哪些优缺点？"><a href="#单页应用有哪些优缺点？" class="headerlink" title="单页应用有哪些优缺点？"></a>单页应用有哪些优缺点？</h3><p>单页Web应用（single page web application，SPA），就是只有一张Web页面的应用。单页应用程序 (SPA) 是加载单个HTML 页面并在用户与应用程序交互时动态更新该页面的Web应用程序。 浏览器一开始会加载必需的HTML、CSS和JavaScript，所有的操作都在这张页面上完成，都由JavaScript来控制。因此，对单页应用来说模块化的开发和设计显得相当重要。</p>
+<p>速度：更好的用户体验，让用户在web app感受native app的速度和流畅，<br>MVC：经典MVC开发模式，前后端各负其责。<br>ajax：重前端，业务逻辑全部在本地操作，数据都需要通过AJAX同步、提交。<br>路由：在URL中采用#号来作为当前视图的地址,改变#号后的参数，页面并不会重载。<br>单页Web应用（single page web application，SPA）是当今网站开发技术的弄潮儿，很多传统网站都在或者已经转型为单页Web应用，新的单页Web应用网站（包括移动平台上的）也如雨后春笋般涌现在人们的面前，如Gmail、Evernote、Trello等。如果你是一名Web开发人员，却还没开发过或者甚至是没有听说过单页应用，那你已经Out很久了。<br>单页Web应用和前端工程师们息息相关，因为主要的变革发生在浏览器端，用到的技术其实还是HTML+CSS+JavaScript，所有的浏览器都原生支持，当然有的浏览器因为具备一些高级特性，从而使得单页Web应用的用户体验更上一层楼。关于单页应用的优点和缺点，网上讲解的文章有很多，这里就不展开论述了。 单页Web应用，顾名思义，就是只有一张Web页面的应用。浏览器一开始会加载必需的HTML、CSS和JavaScript，之后所有的操作都在这张页面上完成，这一切都由JavaScript来控制。因此，单页Web应用会包含大量的JavaScript代码，复杂度可想而知，模块化开发和设计的重要性不言而喻。</p>
+<p>优点：</p>
+<p>分离前后端关注点，前端负责界面显示，后端负责数据存储和计算，各司其职，不会把前后端的逻辑混杂在一起；<br>减轻服务器压力，服务器只用出数据就可以，不用管展示逻辑和页面合成，吞吐能力会提高几倍；<br>同一套后端程序代码，不用修改就可以用于Web界面、手机、平板等多种客户端；<br>缺点：</p>
+<p>SEO问题，现在可以通过Prerender等技术解决一部分；<br>前进、后退、地址栏等，需要程序进行管理；<br>书签，需要程序来提供支持；</p>
+<h3 id="angular-的数据绑定采用什么机制？详述原理"><a href="#angular-的数据绑定采用什么机制？详述原理" class="headerlink" title="angular 的数据绑定采用什么机制？详述原理"></a>angular 的数据绑定采用什么机制？详述原理</h3><p>脏检查机制。</p>
+<p>双向数据绑定是 AngularJS 的核心机制之一。当 view 中有任何数据变化时，会更新到 model ，当 model 中数据有变化时，view 也会同步更新，显然，这需要一个监控。</p>
+<p>原理就是，Angular 在 scope 模型上设置了一个 监听队列，用来监听数据变化并更新 view 。每次绑定一个东西到 view 上时 AngularJS 就会往 $watch 队列里插入一条 $watch，用来检测它监视的 model 里是否有变化的东西。当浏览器接收到可以被 angular context 处理的事件时，$digest 循环就会触发，遍历所有的 $watch，最后更新 dom。<br>举个栗子<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;button ng-click=&quot;val=val+1&quot;&gt;increase 1&lt;/button&gt;</span><br><span class="line">click 时会产生一次更新的操作（至少触发两次 $digest 循环）</span><br></pre></td></tr></table></figure></p>
+<p>按下按钮</p>
+<p>浏览器接收到一个事件，进入到 angular context<br>$digest 循环开始执行，查询每个 $watch 是否变化</p>
+<p>由于监视 $scope.val 的 $watch 报告了变化，因此强制再执行一次 $digest 循环</p>
+<p>新的 $digest 循环未检测到变化</p>
+<p>浏览器拿回控制器，更新 $scope.val 新值对应的 dom</p>
+<p>$digest 循环的上限是 10 次（超过 10次后抛出一个异常，防止无限循环）。</p>
+<h3 id="angular-的缺点有哪些？"><a href="#angular-的缺点有哪些？" class="headerlink" title="angular 的缺点有哪些？"></a>angular 的缺点有哪些？</h3><p>强约束<br>导致学习成本较高，对前端不友好。</p>
+<p>但遵守 AngularJS 的约定时，生产力会很高，对 Java 程序员友好。</p>
+<p>不利于 SEO<br>因为所有内容都是动态获取并渲染生成的，搜索引擎没法爬取。</p>
+<p>一种解决办法是，对于正常用户的访问，服务器响应 AngularJS 应用的内容；对于搜索引擎的访问，则响应专门针对 SEO 的HTML页面。</p>
+<p>性能问题<br>作为 MVVM 框架，因为实现了数据的双向绑定，对于大数组、复杂对象会存在性能问题。</p>
+<p>可以用来 优化 Angular 应用的性能 的办法：</p>
+<p>减少监控项（比如对不会变化的数据采用单向绑定）</p>
+<p>主动设置索引（指定 track by，简单类型默认用自身当索引，对象默认使用 $$hashKey，比如改为 track by item.id）</p>
+<p>降低渲染数据量（比如分页，或者每次取一小部分数据，根据需要再取）</p>
+<p>数据扁平化（比如对于树状结构，使用扁平化结构，构建一个 map 和树状数据，对树操作时，由于跟扁平数据同一引用，树状数据变更会同步到原始的扁平数据）</p>
+<p>另外，对于Angular1.x ，存在 脏检查 和 模块机制 的问题。</p>
+<h3 id="ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？-2"><a href="#ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？-2" class="headerlink" title="ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？"></a>ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？</h3><p>会提示 Duplicates in a repeater are not allowed. 加 track by $index 可解决。当然，也可以 trace by 任何一个普通的值，只要能唯一性标识数组中的每一项即可（建立 dom 和数据之间的关联）</p>
+<h3 id="Observables和Promises的核心区别是什么？"><a href="#Observables和Promises的核心区别是什么？" class="headerlink" title="Observables和Promises的核心区别是什么？"></a>Observables和Promises的核心区别是什么？</h3><p>从堆栈溢出就是一个区别： </p>
+<p>当异步操作完成或失败时，Promise会处理一个单个事件。</p>
+<p>Observable类似于（在许多语言中的）Stream，当每个事件调用回调函数时，允许传递零个或多个事件。通常Observable比Promise更受欢迎，因为它不但提供了Promise特性，还提供了其它特性。使用Observable可以处理0,1或多个事件。你可以在每种情况下使用相同的API。Observable是可取消的，这相比于Promise也具有优势。如果服务器的HTTP请求结果或其它一些异步操作不再需要，则Observable的订阅者可以取消订阅，而Promise将最终调用成功或失败的回调，即使你不需要通知或其提供的结果。Observable提供像map，forEach，reduce之类的类似于数组的运算符，还有强大的运算符，如retry（）或replay（）等，使用起来是相当方便的。</p>
+<p>Promises vs Observables</p>
+<p>Promises：<br>返回单个值<br>不可取消<br>Observables：<br>可以使用多个值<br>可取消<br>支持map，filter，reduce和类似的操作符<br>ES 2016提议的功能<br>使用反应式扩展（RxJS）<br>根据时间的变化，数组成员可以异步获取</p>
+<h3 id="优化-Angular-应用的性能"><a href="#优化-Angular-应用的性能" class="headerlink" title="优化 Angular 应用的性能"></a>优化 Angular 应用的性能</h3><p>减少监控项（比如对不会变化的数据采用单向绑定）<br>主动设置索引（指定 track by，简单类型默认用自身当索引，对象默认使用 $$hashKey，比如改为 track by item.id）<br>降低渲染数据量（比如分页，或者每次取一小部分数据，根据需要再取）<br>数据扁平化（比如对于树状结构，使用扁平化结构，构建一个 map 和树状数据，对树操作时，由于跟扁平数据同一引用，树状数据变更会同步到原始的扁平数据）</p>
+<h3 id="详述-angular-的-“依赖注入”"><a href="#详述-angular-的-“依赖注入”" class="headerlink" title="详述 angular 的 “依赖注入”"></a>详述 angular 的 “依赖注入”</h3><p>赖注入是一种软件设计模式，目的是处理代码之间的依赖关系，减少组件间的耦合。<br>原理：AngularJS是通过构造函数的参数名字来推断依赖服务名称的，通过 toString() 来找到这个定义的 function 对应的字符串，然后用正则解析出其中的参数（依赖项），再去依赖映射中取到对应的依赖，实例化之后传入。</p>
+<p><strong>备注：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">前端的路上我们一起携手共进！如果转载，请标注本链接地址。</span><br></pre></td></tr></table></figure>
+<p>​<a href="https://github.com/famensaodiseng/Front-End/blob/master/LICENSE" target="_blank" rel="noopener">MIT</a>    ©<a href="https://github.com/famensaodiseng" target="_blank" rel="noopener">杨方涛</a>           </p>
+<p>Email:<a href="mailto:58267980@qq.com" target="_blank" rel="noopener">58267980@qq.com</a></p>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2018年11月06日 01:11</p>
+        <p>原始链接： <a class="post-url" href="/2018/06/14/法门扫地僧angular常见问题/" title="法门扫地僧面试宝典第五版">https://lzws0931.cn/2018/06/14/法门扫地僧angular常见问题/</a></p>
+        <footer>
+            <a href="https://lzws0931.cn">
+                <img src="/images/logo.jpg" alt="扫地僧">
+                扫地僧
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;">赏</a>
+</div>
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        请我喝咖啡☕️
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wechat.jpg" alt="打赏二维码">
+        </div>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat.jpg">
+                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="微信">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay.jpg">
+                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="支付宝">
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+        
+    </div>
+
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://lzws0931.cn/2018/06/14/法门扫地僧angular常见问题/&title=《法门扫地僧面试宝典第五版》 — 法门扫地僧的一亩三分地的前端开发工程师H5开发HTML5CSSJavascript&pic=http://p78bqh0g1.bkt.clouddn.com/IMG_0626.jpg" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://lzws0931.cn/2018/06/14/法门扫地僧angular常见问题/&title=《法门扫地僧面试宝典第五版》 — 法门扫地僧的一亩三分地的前端开发工程师H5开发HTML5CSSJavascript&source=" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://lzws0931.cn/2018/06/14/法门扫地僧angular常见问题/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《法门扫地僧面试宝典第五版》 — 法门扫地僧的一亩三分地的前端开发工程师H5开发HTML5CSSJavascript&url=https://lzws0931.cn/2018/06/14/法门扫地僧angular常见问题/&via=https://lzws0931.cn" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://lzws0931.cn/2018/06/14/法门扫地僧angular常见问题/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://lzws0931.cn/2018/06/14/法门扫地僧angular常见问题/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/面试/" class="color3">面试</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+            <! -- 添加版权信息 -->
+<div class="article-footer-copyright">
+<center>本文由<b><a href="/index.html" target="_blank" title="扫地僧">扫地僧</a></b>创作和发表,采用<b>BY</b>-<b>NC</b>-<b>SA</b>国际许可协议进行许可</center>
+
+<center>转载请注明作者及出处,本文作者为<b><a href="/index.html" target="_blank" title="扫地僧">扫地僧</a></b>,本文标题为<b><a href="/2018/06/14/法门扫地僧angular常见问题/" target="_blank" title="法门扫地僧面试宝典第五版">法门扫地僧面试宝典第五版</a></b></center>
+
+<center>本文链接为<b><a href="/2018/06/14/法门扫地僧angular常见问题/" target="_blank" title="法门扫地僧面试宝典第五版">https://lzws0931.cn/2018/06/14/法门扫地僧angular常见问题/</a></b>.</center>
+</div>
+<! -- 添加版权信息 -->
+        
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Front-End"><span class="post-toc-text">Front-End</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#前端开发工程师面试宝典！-（本文部分有转载，不定期更新！）"><span class="post-toc-text">前端开发工程师面试宝典！   （本文部分有转载，不定期更新！）          </span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#前言（README-md）"><span class="post-toc-text">前言（README.md）</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#欢迎大家一起交流提高"><span class="post-toc-text">欢迎大家一起交流提高</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#angularjs的几大特性是什么？"><span class="post-toc-text">angularjs的几大特性是什么？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#列举几种常见的设计模式，写出没个代表的含义？"><span class="post-toc-text">列举几种常见的设计模式，写出没个代表的含义？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#请描述angularjs的运行过程？"><span class="post-toc-text">请描述angularjs的运行过程？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ng-bind和ng-model的区别是什么？"><span class="post-toc-text">ng-bind和ng-model的区别是什么？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#请描述-scope的特点还有其最大的父类？"><span class="post-toc-text">请描述$scope的特点还有其最大的父类？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#原生js的延迟或回调在angularjs里能完美运行吗？怎么解决？可以用例子？"><span class="post-toc-text">原生js的延迟或回调在angularjs里能完美运行吗？怎么解决？可以用例子？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#自定义过滤创建后返回的是一个什么对象？"><span class="post-toc-text">自定义过滤创建后返回的是一个什么对象？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ng-repeat循环-1-3-2-4-3-4-数组会报错吗？如果会怎么解决？"><span class="post-toc-text">ng-repeat循环[1,3,2,4,3,4]数组会报错吗？如果会怎么解决？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#angular常用的服务中value和constant最大的区别是什么？"><span class="post-toc-text">angular常用的服务中value和constant最大的区别是什么？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#常用服务中factory和service的最大区别是什么？"><span class="post-toc-text">常用服务中factory和service的最大区别是什么？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#怎么拦截服务？"><span class="post-toc-text">怎么拦截服务？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#decorator的作用是什么？和拦截服务的区别是什么？"><span class="post-toc-text">decorator的作用是什么？和拦截服务的区别是什么？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#resolve的作用是什么？"><span class="post-toc-text">resolve的作用是什么？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ngRoute默认查找的路由是什么？-routeProvider-otherwise-’-index’-是什么作用？"><span class="post-toc-text">ngRoute默认查找的路由是什么？$routeProvider.otherwise(’/index’)是什么作用？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？"><span class="post-toc-text">ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#angular-应用常用哪些路由库，各自的区别是什么？"><span class="post-toc-text">angular 应用常用哪些路由库，各自的区别是什么？</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#如果通过angular的directive规划一套全组件化体系，可能遇到哪些挑战？"><span class="post-toc-text">如果通过angular的directive规划一套全组件化体系，可能遇到哪些挑战？</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#补充"><span class="post-toc-text">补充</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#如何看待angular2"><span class="post-toc-text">如何看待angular2</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#angularjs-是-mvc-还是-mvvm-框架"><span class="post-toc-text">angularjs 是 mvc 还是 mvvm 框架?</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#angular-核心？"><span class="post-toc-text">angular 核心？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？-1"><span class="post-toc-text">ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#测试驱动开发是什么呢？普及一下："><span class="post-toc-text">测试驱动开发是什么呢？普及一下：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#单页应用有哪些优缺点？"><span class="post-toc-text">单页应用有哪些优缺点？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#angular-的数据绑定采用什么机制？详述原理"><span class="post-toc-text">angular 的数据绑定采用什么机制？详述原理</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#angular-的缺点有哪些？"><span class="post-toc-text">angular 的缺点有哪些？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？-2"><span class="post-toc-text">ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Observables和Promises的核心区别是什么？"><span class="post-toc-text">Observables和Promises的核心区别是什么？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#优化-Angular-应用的性能"><span class="post-toc-text">优化 Angular 应用的性能</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#详述-angular-的-“依赖注入”"><span class="post-toc-text">详述 angular 的 “依赖注入”</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+    <a href="/2018/07/17/腾讯‘一页尽览’产品体验/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          ‘一页尽览’产品体验
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2018/05/10/浏览器渲染原理/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">浏览器渲染原理(本文转载)</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+
+    
+        <div id="SOHUCS" sid="法门扫地僧angular常见问题" ></div>
+<script type="text/javascript">
+    (function(){
+        var appid = 'cyrvjg2G6';
+        var conf = '181c52f8f7207522586fc73b99966c5d';
+        var width = window.innerWidth || document.documentElement.clientWidth;
+        if (width < 960) {
+            window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+    
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://lzws0931.cn/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/famensaodiseng" target="_blank">法门扫地僧</a>
+      &copy; 2018 扫地僧<br><a href="http://www.miitbeian.gov.cn" target="_blank">陕ICP备18003829号</a>
+      </p>
+    </div>
+  </div>
+</footer>
+<nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="主页" target="_blank" href="//lzws0931.cn">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/famensaodiseng">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/237800789">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="博客园" target="_blank" href="//www.cnblogs.com/famensaodiseng/">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+            
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "https://lzws0931.cn",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 1
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/前后分离/">前后分离</a><a class="category-link" href="/categories/博客制作/">博客制作</a><a class="category-link" href="/categories/技术/">技术</a><a class="category-link" href="/categories/旅游/">旅游</a><a class="category-link" href="/categories/生活琐事/">生活琐事</a><a class="category-link" href="/categories/知识分享/">知识分享</a><a class="category-link" href="/categories/网站上线/">网站上线</a><a class="category-link" href="/categories/面试宝典/">面试宝典</a><a class="category-link" href="/categories/面试技巧/">面试技巧</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/产品/" style="font-size: 13.33px;">产品</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/工作流/" style="font-size: 10px;">工作流</a> <a href="/tags/浏览器/" style="font-size: 10px;">浏览器</a> <a href="/tags/生活/" style="font-size: 16.67px;">生活</a> <a href="/tags/面试/" style="font-size: 20px;">面试</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>主页</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>归档</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about">
+                    <i class="fa fa-user"></i><span>关于我</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/产品/" style="font-size: 13.33px;">产品</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/工作流/" style="font-size: 10px;">工作流</a> <a href="/tags/浏览器/" style="font-size: 10px;">浏览器</a> <a href="/tags/生活/" style="font-size: 16.67px;">生活</a> <a href="/tags/面试/" style="font-size: 20px;">面试</a>
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+<script type="text/javascript" src="/js/love.js"></script>
+</html>
