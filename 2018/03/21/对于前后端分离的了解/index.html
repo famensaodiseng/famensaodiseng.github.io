@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>对于前后端分离的了解 | 法门扫地僧的一亩三分地的前端开发工程师H5开发HTML5CSSJavascript</title>
+  <meta name="description" content="法门扫地僧的前端开发技术博客,前端工程师,node" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="wb:webmaster" content="510f0f8a61c6b240" />
+  <meta name="baidu-site-verification" content="4WoaDYL5tX" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-title" content="法门扫地僧">
+  <meta charset="utf-8" name="description" content="法门扫地僧专注于前端开发以及新媒体运营，微博，微信公众号推广等策划活动，您的喜欢就是我们最大的信赖！">
+  
+    <meta name="keywords" content="法门扫地僧的一亩三分地前端开发工程师H5开发" />
+  
+  <meta name="description" content="前后端分离、 本文来源我在慕课网学习时候看到笔记整理    https://www.imooc.com  什么叫前后端分离？ 前后端分离就是后端不再直接返回html， 直接返回数据，当然数据格式可以自己指定比如xml， json、yml都是可以的， html页面由前端去填充这些数据到dom中。 随着前后端技术的更新，越来越多的前端框架进入开发者们的视野，网站的前后分离架构越来越得到开发者们的喜爱与">
+<meta name="keywords" content="工作流">
+<meta property="og:type" content="article">
+<meta property="og:title" content="对于前后端分离的了解">
+<meta property="og:url" content="https://lzws0931.cn/2018/03/21/对于前后端分离的了解/index.html">
+<meta property="og:site_name" content="法门扫地僧的一亩三分地的前端开发工程师H5开发HTML5CSSJavascript">
+<meta property="og:description" content="前后端分离、 本文来源我在慕课网学习时候看到笔记整理    https://www.imooc.com  什么叫前后端分离？ 前后端分离就是后端不再直接返回html， 直接返回数据，当然数据格式可以自己指定比如xml， json、yml都是可以的， html页面由前端去填充这些数据到dom中。 随着前后端技术的更新，越来越多的前端框架进入开发者们的视野，网站的前后分离架构越来越得到开发者们的喜爱与">
+<meta property="og:updated_time" content="2018-03-21T02:51:13.123Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="对于前后端分离的了解">
+<meta name="twitter:description" content="前后端分离、 本文来源我在慕课网学习时候看到笔记整理    https://www.imooc.com  什么叫前后端分离？ 前后端分离就是后端不再直接返回html， 直接返回数据，当然数据格式可以自己指定比如xml， json、yml都是可以的， html页面由前端去填充这些数据到dom中。 随着前后端技术的更新，越来越多的前端框架进入开发者们的视野，网站的前后分离架构越来越得到开发者们的喜爱与">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated" >
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">法门扫地僧</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>主页</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>归档</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>关于我</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div style="right:0;position:fixed;top: 20%;">
+         <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=58267980&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:58267980:51" alt="立即聊天" title="立即聊天"/></a>
+         </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.jpg" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        法门扫地僧
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        技术与生活分享博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <div>
+           <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=33955052&auto=0&height=32"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div>
+    <a href="https://github.com/famensaodiseng"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png" alt="Fork me on GitHub"></a>
+    </div>
+</header>
+
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-对于前后端分离的了解" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+<div class="sideContent"></div>
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      对于前后端分离的了解
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/前后分离/">前后分离</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2018-03-21
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h3 id="前后端分离、"><a href="#前后端分离、" class="headerlink" title="前后端分离、"></a>前后端分离、</h3><ul>
+<li>本文来源我在慕课网学习时候看到笔记整理    <a href="https://www.imooc.com" target="_blank" rel="noopener">https://www.imooc.com</a></li>
+</ul>
+<h3 id="什么叫前后端分离？"><a href="#什么叫前后端分离？" class="headerlink" title="什么叫前后端分离？"></a>什么叫前后端分离？</h3><ul>
+<li>前后端分离就是后端不再直接返回html， 直接返回数据，当然数据格式可以自己指定比如xml， json、yml都是可以的， html页面由前端去填充这些数据到dom中。</li>
+<li><p>随着前后端技术的更新，越来越多的前端框架进入开发者们的视野，网站的前后分离架构越来越得到开发者们的喜爱与认可。  </p>
+<p>  后端只提供数据接口、业务逻辑与持久化服务，而视图、控制与渲染则交给前端。 因此，越来越多的网站从后端渲染变成了前端渲染，前后端分离意味着后端可以不用去了解前端的代码， 前端不用学习后端的模板语法， 前后端不需要等到对方做好了才能调试了， 尽量在保证自己端的代码写好以及少bug， 这样在后期真正联调的时候就可以尽量避免bug了，而且前后端分离还意味着pc端、app、后台管理系统等各种系统可以尽量多的共用接口了。</p>
+</li>
+<li><p>什么时候选择前后端分离的开发模式？</p>
+<p>  在开发过程中相信大家经常会遇到一个问题， android端、ios端、pc端、 后台管理系统如果使用传统的mvc开发模式， 只要页面不一样 我们都得给对应的系统写一套后台， 而且很多页面还需要后端去填充数据到html中、 但是前后端分离的开发模式我们只需要把接口写好， 其余都不用管让前端去协调各个接口之间如何配合。<br>这种模式最大的好处就是适应性很强。 当然还有个很大的好处就是前端不用再等待将页面写好了然后交给后端， 然后后端再将代码改成模板语言了， 当然如果前端熟悉后端模板语法， 后端当然就很喜欢了， 但是前端往往不愿意去学习后端的模板语法，更喜欢用前端自己的模板语法。 前后端分离解决了这个问题<br>  但是Restful api还是有缺点， 最大的问题就是seo， 爬虫爬不到， 百度就会给你降权， 对于那种需要流量的网站来说，这个是不太接受的， 所以后面就有了ssr技术， 在服务器端渲染好静态页面直接给前端， 这篇爬虫就能爬取到了， 而且有些系统比如内部系统或者后台管理系统这种根本就不在乎seo的直接就用restful api开发就行了。</p>
+<p>  除了上面的问题以外还有就是数据格式依赖严重， 如果后端改了某个字段的名称， 前端也得跟着改， 在以前这种改动后端自己就可以一个人完成，但是分离之后得前端去改了， 如果返回格式变了，前端变动更大。 </p>
+<p>  还有就是文档变得很重要了我们得去维护文档了，因为前后端分离脱离了文档，后期想维护能麻烦死。</p>
+</li>
+<li><p>前后端分离开发 跨域问题</p>
+</li>
+<li><p>我们现在有个二次开发的项目，要求前后端分离开发，前端我用webpack-dev-server本地服务，要请求java后台tomact下数据，我要处理跨域请求的问题，jsonp肯定是不行了，后台代码基本已经确认了，我想问如何让后台做的少更改的情况下，前端这边需要做什么配置来解决跨域问题。</p>
+<p>  想问一些关于前后端分离开发的问题。因为第一次开发有很多地方不清楚，上网查了很多资料现在似懂非懂，基本上就开发环境下的跨域问题是前端后后台一起解决，还是只用前端解决。（网上说是一起解决，但我后台的同事也没有接触过，他们以前都是javaweb项目，也不太懂），第二就是后期部署时前端和后台是不是分开部署服务器，可以部署在同一个服务器上吗。</p>
+</li>
+<li><p>要么单独写jsonp的接口，要么后台设置cors。开发环境下，你可以使用webpack的代理，用你启动的node服务代理请求访问java的接口然后把结果返回给你，但是生产环境下必须要后端的配合，要么jsonp, 要么设置cors，前端是无法解决的！设置cors是改动成本最低的方式</p>
+</li>
+<li><p>Node.js覆盖哪些领域？有没有值得玩的？</p>
+<p>  理论上 Node 运行在服务器，后端能做的 Node 都能做，但是有几个擅长的领域<br>前端本地代码构建、打包：webpack、gulp、babel 等<br>前端单元测试 &amp;  UI 测试：mocha、kama、jest、puppeteer 等<br>视觉渲染为核心的 web 站点：koa、express<br>企业级 web 框架 egg<br>爬虫 puppeteer<br>桌面程序开发 node-webkit、electron<br>比较好玩的应该是爬虫和啄米昂程序开发，但工作最常用的是本地代码构建、打包 &amp;  web</p>
+</li>
+</ul>
+<ul>
+<li><p>请问一下，在公司里从事前端和后端的人是如何配合的？<br>在前后端分离的情况下，后端同学的任务是把数据和文件做持久化存储，并提供操作数据数据的接口。前端同学负责请求数据，然后对数据做处理和适配，最后再把数据呈现出来。其实就是以接口为界限，后端负责接口的制作，前端负责接口的调用。</p>
+<p>  在实际开发中，一般是前后端同学拿到需求后，一起来确定各个功能点需要的接口，然后再逐个细化出各个接口的输入输出字段，最后由后端同学生成一个接口文档。</p>
+</li>
+</ul>
+<ul>
+<li>模块化为什么可以提高开发效率？<br>1.对代码进行封装隔离，提高代码的复用性，就能减少代码量<br>2.通过逐级对业务的拆解，达到简化业务的作用，降低系统复杂度<br>3.更好的代码组织方式，能支持团队并行开发，提高团队的效率<br>4.封闭作用域，减少变量冲突带来的不太容易发现的问题<br>5.耦合小，利于后期扩展和修改，降低系统的后期维护成本     </li>
+<li><p>开发环境：开发环境是程序猿们专门用于开发的服务器，配置可以比较随意，为了开发调试方便，一般打开全部错误报告。</p>
+<p>测试环境：一般是克隆一份生产环境的配置，一个程序在测试环境工作不正常，那么肯定不能把它发布到生产机上。</p>
+<p>生产环境：是值正式提供对外服务的，一般会关掉错误报告，打开错误日志。</p>
+<p>三个环境也可以说是系统开发的三个阶段：开发-&gt;测试-&gt;上线，其中生产环境也就是通常说的真实环境。</p>
+</li>
+</ul>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2018年03月21日 10:51</p>
+        <p>原始链接： <a class="post-url" href="/2018/03/21/对于前后端分离的了解/" title="对于前后端分离的了解">https://lzws0931.cn/2018/03/21/对于前后端分离的了解/</a></p>
+        <footer>
+            <a href="https://lzws0931.cn">
+                <img src="/images/logo.jpg" alt="扫地僧">
+                扫地僧
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;">赏</a>
+</div>
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        请我喝咖啡☕️
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wechat.jpg" alt="打赏二维码">
+        </div>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat.jpg">
+                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="微信">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay.jpg">
+                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="支付宝">
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+        
+    </div>
+
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://lzws0931.cn/2018/03/21/对于前后端分离的了解/&title=《对于前后端分离的了解》 — 法门扫地僧的一亩三分地的前端开发工程师H5开发HTML5CSSJavascript&pic=https://i.loli.net/2018/03/21/5ab1c71d4a4c3.jpg" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://lzws0931.cn/2018/03/21/对于前后端分离的了解/&title=《对于前后端分离的了解》 — 法门扫地僧的一亩三分地的前端开发工程师H5开发HTML5CSSJavascript&source=" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://lzws0931.cn/2018/03/21/对于前后端分离的了解/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《对于前后端分离的了解》 — 法门扫地僧的一亩三分地的前端开发工程师H5开发HTML5CSSJavascript&url=https://lzws0931.cn/2018/03/21/对于前后端分离的了解/&via=https://lzws0931.cn" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://lzws0931.cn/2018/03/21/对于前后端分离的了解/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://lzws0931.cn/2018/03/21/对于前后端分离的了解/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/工作流/" class="color4">工作流</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+            <! -- 添加版权信息 -->
+<div class="article-footer-copyright">
+<center>本文由<b><a href="/index.html" target="_blank" title="扫地僧">扫地僧</a></b>创作和发表,采用<b>BY</b>-<b>NC</b>-<b>SA</b>国际许可协议进行许可</center>
+
+<center>转载请注明作者及出处,本文作者为<b><a href="/index.html" target="_blank" title="扫地僧">扫地僧</a></b>,本文标题为<b><a href="/2018/03/21/对于前后端分离的了解/" target="_blank" title="对于前后端分离的了解">对于前后端分离的了解</a></b></center>
+
+<center>本文链接为<b><a href="/2018/03/21/对于前后端分离的了解/" target="_blank" title="对于前后端分离的了解">https://lzws0931.cn/2018/03/21/对于前后端分离的了解/</a></b>.</center>
+</div>
+<! -- 添加版权信息 -->
+        
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#前后端分离、"><span class="post-toc-text">前后端分离、</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#什么叫前后端分离？"><span class="post-toc-text">什么叫前后端分离？</span></a></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+    <a href="/2018/04/06/感谢/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          从一个人的社交圈看不到什么有用信息！
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2018/03/19/我的技术博客终于完成了/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">我的技术博客终于完成了！</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+
+    
+        <div id="SOHUCS" sid="对于前后端分离的了解" ></div>
+<script type="text/javascript">
+    (function(){
+        var appid = 'cyrvjg2G6';
+        var conf = '181c52f8f7207522586fc73b99966c5d';
+        var width = window.innerWidth || document.documentElement.clientWidth;
+        if (width < 960) {
+            window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+    
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://lzws0931.cn/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/famensaodiseng" target="_blank">法门扫地僧</a>
+      &copy; 2018 扫地僧<br><a href="http://www.miitbeian.gov.cn" target="_blank">陕ICP备18003829号</a>
+      </p>
+    </div>
+  </div>
+</footer>
+<nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="主页" target="_blank" href="//lzws0931.cn">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/famensaodiseng">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/237800789">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="博客园" target="_blank" href="//www.cnblogs.com/famensaodiseng/">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+            
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "https://lzws0931.cn",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 1
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/前后分离/">前后分离</a><a class="category-link" href="/categories/博客制作/">博客制作</a><a class="category-link" href="/categories/技术/">技术</a><a class="category-link" href="/categories/旅游/">旅游</a><a class="category-link" href="/categories/生活琐事/">生活琐事</a><a class="category-link" href="/categories/知识分享/">知识分享</a><a class="category-link" href="/categories/网站上线/">网站上线</a><a class="category-link" href="/categories/面试宝典/">面试宝典</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/产品/" style="font-size: 15px;">产品</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/工作流/" style="font-size: 10px;">工作流</a> <a href="/tags/浏览器/" style="font-size: 10px;">浏览器</a> <a href="/tags/生活/" style="font-size: 20px;">生活</a> <a href="/tags/面试/" style="font-size: 10px;">面试</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>主页</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>归档</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about">
+                    <i class="fa fa-user"></i><span>关于我</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/产品/" style="font-size: 15px;">产品</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/工作流/" style="font-size: 10px;">工作流</a> <a href="/tags/浏览器/" style="font-size: 10px;">浏览器</a> <a href="/tags/生活/" style="font-size: 20px;">生活</a> <a href="/tags/面试/" style="font-size: 10px;">面试</a>
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+<script type="text/javascript" src="/js/love.js"></script>
+</html>
